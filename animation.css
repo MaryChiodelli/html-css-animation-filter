@@ -84,6 +84,14 @@
     animation: spin-315 2s linear;
 }
 
+.ex-12-button:hover .ex-12-top-white {
+    animation: translate-left-right 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: translate-right-left 2s linear;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -102,5 +110,23 @@
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@keyframes translate-left-right {
+    50% {
+        left: 65%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes translate-right-left {
+    50% {
+        right: 65%;
+    }
+    100% {
+        right: 20%;
     }
 }
