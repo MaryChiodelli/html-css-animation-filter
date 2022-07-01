@@ -92,6 +92,14 @@
     animation: translate-right-left 2s linear;
 }
 
+.ex-13-button:hover .ex-13-top-white {
+    animation: translate-right 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: translate-left 2s linear;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -128,5 +136,59 @@
     }
     100% {
         right: 20%;
+    }
+}
+
+@keyframes translate-right {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    25% {
+        top: -10px;
+        left: 85%;
+    }
+    50% {
+        top: 55px;
+        left: 85%;
+    }
+    75% {
+        top: 55px;
+        left: -15%;
+    }
+    90% {
+        top: -10px;
+        left: -15%;
+    }
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes translate-left {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    25% {
+        right: 85%;
+        bottom: -10px;
+    }
+    50% {
+        right: 85%;
+        bottom: 55px;
+    }
+    75% {
+        right: -15%;
+        bottom: 55px;
+    }
+    90% {
+        right: -15%;
+        bottom: -10px;
+    }
+    100% {
+        right: 20%;
+        bottom: -10px;
     }
 }
